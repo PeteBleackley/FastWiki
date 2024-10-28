@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+dynamic = ["version"]
+name = "FastWiki"
+dependencies = ["fastapi[standard]",
+                "GitPython",
+                "markdown",
+                "pyyaml",
+                "ZODB"]                
+authors = [{"name" = "Peter Bleackley", "email" = "pete.bleackley@btinternet.com"}]
+description = "A Wiki engine based on FastAPI that serves files staticly whenever posssible"
+[tool.setuptools]
+py-modules = []
+    
