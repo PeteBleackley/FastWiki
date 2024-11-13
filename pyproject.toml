@@ -8,7 +8,9 @@ dependencies = ["fastapi[standard]",
                 "GitPython",
                 "markdown",
                 "pyyaml",
-                "ZODB"]                
+                "ZODB",
+                "passlib[bcrypt]",
+                "pyjwt"]
 authors = [{"name" = "Peter Bleackley", "email" = "pete.bleackley@btinternet.com"}]
 description = "A Wiki engine based on FastAPI that serves files staticly whenever posssible"
 [tool.setuptools]
